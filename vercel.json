@@ -3,6 +3,10 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/nfc", "destination": "/nfc/index.html" },
+    { "source": "/nfc/", "destination": "/nfc/index.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
