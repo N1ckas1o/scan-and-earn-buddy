@@ -19,6 +19,7 @@ mkdirSync(join(dist, "assets"), { recursive: true });
 cpSync(join(root, "assets", "flags"), join(dist, "assets", "flags"), { recursive: true });
 cpSync(join(root, "assets", "menu"), join(dist, "assets", "menu"), { recursive: true });
 cpSync(join(root, "businesses"), join(dist, "businesses"), { recursive: true });
+cpSync(join(root, "nfc"), join(dist, "nfc"), { recursive: true });
 
 await build({
   root,
